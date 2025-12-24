@@ -1,11 +1,269 @@
-<!doctype html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Eshita Gupta</title>
-  </head>
-  <body>
-    <h1> My portfolio Website</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eshita Gupta - Software Engineer</title>
+  <link rel="stylesheet" href="./src/output.css">
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+  <header id="header" class="bg-secondary font-cool">
+      <button id="menuBtn" aria-label="Open menu" class="md:hidden gap-4 p-4 text-primary text-sm ">☰</button>
+      <nav id="menu" class="hidden md:flex gap-4 p-4 text-primary text-xs">
+      <ul class="flex gap-4">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#upcoming">Upcoming</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      </nav>
+  </header>
+
+  <main>
+  <!-- About Section-->  
+  <section id="about" class="bg-secondary min-h-dvh">
+
+    <div class="grid p-5 gap-10 md:ml-25 md:mr-25">
+
+    <div class="flex flex-col justify-center items-center pt-20 font-cool">
+      <h1 class="text-5xl">Eshita Gupta</h1>
+      <span class="text-neutral pt-2">Software Developer | Cloud Engineer</span>
+    </div>
+
+    <div id="about-me" class="grid items-center p-10 m-10 border  border-primary rounded-3xl">
+      <div class="flex justify-center p-5">
+        <p class="font-sans">I’m a software engineer with an experience that spans sales, operations, and technology which helped me gain a holistic view of how systems, people, and business goals connect.
+
+        I began my journey as a Systems Engineer at Infosys, where I first grew curious about backend systems and how infrastructure supports real-world applications. Since then, I’ve moved through roles in different industries and learned how products actually work in the real world and how systems support business growth.
+
+        Today, I’m building deep expertise in AWS, Serverless development, and TypeScript while contributing to cloud-focused projects in my current role. I bring strong communication skills from sales, structured execution from operations, and problem-solving discipline from engineering — a combination that makes my perspective valuable.
+
+        I’m continuously learning and actively exploring opportunities in cloud engineering, backend development, and infrastructure-focused teams.</p>
+      </div>
+
+      <div class="flex justify-end">
+        <button class="font-cool bg-primary p-2 rounded-2xl">Get in touch</button>
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Section-->  
+  <section id="skills" class="bg-light min-h-dvh grid">
+
+    <div class="flex justify-start font-cool p-5">
+      <h2 class="text-3xl">Skills</h2>
+    </div>
+
+    <div class="grid md:flex gap-2 justify-around font-cool">
+
+    <div id="full-stack" class="min-w-1/4 grid gap-5 p-2 border border-secondary rounded-3xl">
+      <div class="flex justify-center">
+        <h3 class="text-xl"> Full stack technologies</h3>
+      </div>
+      <div class="flex self-end justify-center md:justify-end max-h-10">
+        <button class="bg-secondary max-w-sm p-2 rounded-2xl">Read my blog</button>
+      </div>
+      
+    </div>
+
+    <div id="data-analytics" class="min-w-1/4 grid gap-5 p-2 border border-secondary rounded-3xl">
+      <div class="flex justify-center">
+        <h3 class="text-xl"> Data Analytics technologies</h3>
+      </div>
+      <div class="flex self-end justify-center md:justify-end max-h-10">
+        <button class="bg-secondary p-2 rounded-2xl">Read my blog</button>
+      </div>
+    </div>
+
+    <div id="ai" class="min-w-1/4 grid gap-5 p-2 border border-secondary rounded-3xl">
+      <div class="flex justify-center">
+        <h3 class="text-xl"> AI technologies</h3>
+      </div>
+      <div class="flex self-end justify-center md:justify-end max-h-10">
+        <button class="bg-secondary p-2 rounded-2xl">Read my blog</button>
+      </div>
+      
+    </div>
+    </div>
+     <!-- moving skills logos -->
+    <div class="flex self-end justify-around overflow-hidden p-10">
+      <div class="animate-marquee space-x-12">
+    <img src="./src/images/logo1.png" alt="Logo 1" class="h-12">
+    <img src="./src/images/logo2.png" alt="Logo 2" class="h-12">
+    <img src="./src/images/logo3.png" alt="Logo 3" class="h-12">
+    <img src="./src/images/logo4.png" alt="Logo 4" class="h-12">
+    <img src="./src/images/logo5.png" alt="Logo 5" class="h-12">
+    <img src="./src/images/logo6.png" alt="Logo 6" class="h-12">
+    <img src="./src/images/logo7.png" alt="Logo 7" class="h-12">
+    <!-- Repeat logos for seamless effect -->
+    </div>
+    </div>
+  </section>
+
+  <!-- Projects Section-->  
+  <section id="projects" class="bg-secondary min-h-dvh grid">
+
+    <div class="flex justify-start font-cool p-5">
+      <h2 class="text-3xl">Projects</h2>
+    </div>
+
+    <div class="grid gap-6 font-cool px-4
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-3
+            justify-items-center">
+
+    <div id="feature-1" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3">
+      <img src="./src/images/project1.jpg" alt="project-1" id="project-1" class="w-full h-full object-cover rounded-3xl">
+    </div>
+
+    <div id="feature-2" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3">
+      <img src="./src/images/project2.png" alt="project-2" id="project-2" class="w-full h-full object-cover rounded-3xl">
+    </div>
+
+    <div id="feature-3" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3">
+      <img src="./src/images/project3.png" alt="project-3" id="project-3" class="w-full h-full object-cover rounded-3xl">
+    </div>
+
+    </div>
+    
+    <div class="grid justify-center p-5 md:h-20">
+      <button class="font-cool bg-primary p-2 rounded-2xl">More on Github</button>
+    </div>
+
+  </section>
+
+  <!-- Certification Section-->  
+  <section id="certifications" class="bg-primary min-h-2/3 flex flex-col">
+
+    <div class="flex justify-start font-cool p-5">
+      <h2 class="text-3xl">Certifications</h2>
+    </div>
+
+    <div class="flex-1 flex items-center justify-around m-5">
+      <div class="grid justify-center gap-12 font-cool px-4
+            grid-cols-1
+            lg:grid-cols-3">
+    <div class="border border-neutral rounded-3xl gap-5 p-4">
+      <img src="./src/images/cert1.png" alt="certification-1" id="cert-1" class="h-36">
+    </div>
+    <div class="border border-neutral rounded-3xl gap-5 p-4">
+      <img src="./src/images/cert2.jpeg" alt="certification-2" id="cert-2" class="h-36">
+    </div>
+    <div class="border border-neutral rounded-3xl gap-5 p-4">
+      <img src="./src/images/cert3.png" alt="certification-3" id="cert-3" class="h-36">
+    </div>
+    </div>
+    </div>
+
+  </section>
+
+  <!-- Upcoming Work Section-->  
+  <section id="upcoming" class="bg-light min-h-[40vh] flex flex-col md:flex-row items-center justify-center gap-6 px-6">
+
+      <div id="up-cert" class="p-6 border border-secondary rounded-3xl
+           flex flex-col items-center gap-4
+           w-full max-w-sm">
+      <h3 class="text-xl font-cool text-center"> Upcoming Certifications </h3>
+
+      <div class="border border-neutral rounded-3xl
+             flex items-center justify-center
+             p-4">
+      <img src="./src/images/upcoming1.png" alt="certification-3" id="cert-3" class="h-24 object-contain">
+      </div>
+      </div>
+
+      <div id="up-project" class="p-6 border border-secondary rounded-3xl
+           flex flex-col items-center gap-4
+           w-full max-w-sm">
+      <h3 class="text-xl font-cool text-center"> Upcoming Project </h3>
+
+      <div class="border border-neutral rounded-3xl
+             flex items-center justify-center
+             p-4">
+      <img src="./src/images/upcoming2.jpg" alt="certification-3" id="cert-3" class="h-24 object-contain">
+      </div>
+      </div>
+
+  </section>
+    
+  <!-- Get in touch Section--> 
+  <section id="contact" class="bg-secondary min-h-8/12 flex flex-col">
+    <div class="p-5 font-cool">
+      <h2 class="text-3xl">Get in touch</h2>
+    </div>
+
+    <div class="flex-1 flex items-center justify-center px-4">
+    <div class="w-full max-w-xl border border-primary rounded-3xl
+             p-6 flex flex-col gap-6 font-cool">
+
+      <form class="flex flex-col gap-4">
+        <div class="flex flex-col gap-1">
+          <label for="name" class="mb-1 text-sm">Name </label> 
+            <input id="name" type="text"
+            class="border border-neutral rounded-xl p-3
+                   bg-transparent focus:outline-none
+                   focus:border-primary"
+            placeholder="Your name"
+          /></label> </div>
+
+        <div class="flex flex-col gap-1">
+          <label for="email" class="mb-1 text-sm">Email </label>
+            <input id="email" type="email"
+            class="border border-neutral rounded-xl p-3
+                   bg-transparent focus:outline-none
+                   focus:border-primary"
+            placeholder="You@email.com"
+          /></label>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label for="message">Message </label> 
+            <textarea
+            id="message"
+            rows="4"
+            class="border border-neutral rounded-xl p-3
+                   bg-transparent focus:outline-none
+                   focus:border-primary resize-none"
+            placeholder="Your message..."
+          ></textarea></label>
+        </div>
+
+        <button
+          type="submit"
+          class="bg-primary rounded-2xl py-3
+                 hover:opacity-90 transition"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="flex justify-center gap-6 pt-4">
+      <a href="https://github.com/eshitag" class="hover:scale-110 transition">
+          <img src="./src/images/github.png" alt="GitHub" class="h-12" />
+      </a>
+      <a href="https://www.linkedin.com/in/eshitaxgupta/" class="hover:scale-110 transition">
+          <img src="./src/images/linkedin.png" alt="LinkedIn" class="h-12" />
+      </a>
+      <a href="#" class="hover:scale-110 transition">
+          <img src="./src/images/medium.png" alt="Medium" class="h-12" />
+      </a>
+    </div>
+    
+  </section>
+  </main>
+  
+  <footer id="footer" class="flex bg-secondary justify-center p-5 font-cool text-xs">
+  <span>© 2025 Eshita Gupta. All rights reserved.</span>
+  </footer>
+</body>
 </html>
