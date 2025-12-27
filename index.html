@@ -8,10 +8,25 @@
   <script defer src="./js/main.js"></script>
 </head>
 <body>
-  <header id="header" class="bg-secondary font-cool">
-      <button id="menuBtn" aria-label="Open menu" class="md:hidden gap-4 p-4 text-primary text-sm ">☰</button>
-      <nav id="menu" class="hidden md:flex gap-4 p-4 text-primary text-xs">
-      <ul class="flex gap-4">
+
+  <header id="header" class="bg-secondary font-cool relative">
+  <div class="grid items-center justify-between p-4">
+
+    <button
+      id="menuBtn"
+      aria-label="Open menu"
+      class="md:hidden text-primary text-xl"
+    >
+      ☰
+    </button>
+
+    <nav id="menu" class="hidden
+      absolute top-full left-0 w-full
+      bg-secondary
+      md:static md:flex md:w-auto
+      text-primary text-sm">
+      <ul class="flex flex-col gap-4 p-4
+        md:flex-row md:p-0">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -19,8 +34,25 @@
         <li><a href="#upcoming">Upcoming</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      </nav>
-  </header>
+    </nav>
+  </div>
+
+  <!-- Mobile menu -->
+  <nav
+    id="mobileMenu"
+    class="hidden md:hidden border-t border-primary"
+  >
+    <ul class="flex flex-col gap-4 p-4 text-primary text-sm">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#upcoming">Upcoming</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <main>
   <!-- About Section-->  
@@ -33,9 +65,9 @@
       <span class="text-neutral pt-2">Software Developer | Cloud Engineer</span>
     </div>
 
-    <div id="about-me" class="grid items-center p-10 m-10 border  border-primary rounded-3xl">
+    <div id="about-me" class="grid items-center border  border-primary rounded-3xl p-6 md:p-10 mx-auto max-w-3xl">
       <div class="flex justify-center p-5">
-        <p class="font-sans">I’m a software engineer with an experience that spans sales, operations, and technology which helped me gain a holistic view of how systems, people, and business goals connect.
+        <p class="font-sans text-sm md:text-base leading-relaxed">I’m a software engineer with an experience that spans sales, operations, and technology which helped me gain a holistic view of how systems, people, and business goals connect.
 
         I began my journey as a Systems Engineer at Infosys, where I first grew curious about backend systems and how infrastructure supports real-world applications. Since then, I’ve moved through roles in different industries and learned how products actually work in the real world and how systems support business growth.
 
