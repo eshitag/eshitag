@@ -27,12 +27,12 @@
       text-primary text-sm">
       <ul class="flex flex-col gap-4 p-4
         md:flex-row md:p-0">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#upcoming">Upcoming</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" class="transition-colors duration-200 hover:text-black">About</a></li>
+        <li><a href="#skills" class="transition-colors duration-200 hover:text-black">Skills</a></li>
+        <li><a href="#projects" class="transition-colors duration-200 hover:text-black">Projects</a></li>
+        <li><a href="#certifications" class="transition-colors duration-200 hover:text-black">Certifications</a></li>
+        <li><a href="#upcoming" class="transition-colors duration-200 hover:text-black">Upcoming</a></li>
+        <li><a href="#contact" class="transition-colors duration-200 hover:text-black">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -43,47 +43,115 @@
     class="hidden md:hidden border-t border-primary"
   >
     <ul class="flex flex-col gap-4 p-4 text-primary text-sm">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#upcoming">Upcoming</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about" class="transition-colors duration-200 hover:text-black">About</a></li>
+      <li><a href="#skills" class="transition-colors duration-200 hover:text-black">Skills</a></li>
+      <li><a href="#projects" class="transition-colors duration-200 hover:text-black">Projects</a></li>
+      <li><a href="#certifications" class="transition-colors duration-200 hover:text-black">Certifications</a></li>
+      <li><a href="#upcoming" class="transition-colors duration-200 hover:text-black">Upcoming</a></li>
+      <li><a href="#contact" class="transition-colors duration-200 hover:text-black">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 
   <main>
-  <!-- About Section-->  
-  <section id="about" class="bg-secondary min-h-dvh">
+  <!-- Intro Section -->
+<section
+  id="intro"
+  class="bg-secondary min-h-dvh flex items-center justify-center px-4"
+>
+  <div class="text-center max-w-2xl font-cool">
 
-    <div class="grid p-5 gap-10 md:ml-25 md:mr-25">
-
-    <div class="flex flex-col justify-center items-center pt-20 font-cool">
-      <h1 class="text-5xl">Eshita Gupta</h1>
-      <span class="text-neutral pt-2">Software Developer | Cloud Engineer</span>
+    <!-- Profile Image -->
+    <div class="w-36 h-36 mx-auto mb-6
+                rounded-full border-2 border-primary
+                overflow-hidden">
+      <img
+        src="./src/images/profile.jpeg"
+        alt="Eshita Gupta"
+        class="w-full h-full object-cover"
+      />
     </div>
 
-    <div id="about-me" class="grid items-center border  border-primary rounded-3xl p-6 md:p-10 mx-auto max-w-3xl">
-      <div class="flex justify-center p-5">
-        <p class="font-sans text-sm md:text-base leading-relaxed">I’m a software engineer with an experience that spans sales, operations, and technology which helped me gain a holistic view of how systems, people, and business goals connect.
+    <!-- Name -->
+    <h1 class="text-4xl md:text-5xl mb-2">
+      Eshita Gupta
+    </h1>
 
-        I began my journey as a Systems Engineer at Infosys, where I first grew curious about backend systems and how infrastructure supports real-world applications. Since then, I’ve moved through roles in different industries and learned how products actually work in the real world and how systems support business growth.
+    <!-- Role -->
+    <span class="text-neutral text-lg md:text-xl mb-4">
+      Software Developer | Cloud Engineer
+    </span>
 
-        Today, I’m building deep expertise in AWS, Serverless development, and TypeScript while contributing to cloud-focused projects in my current role. I bring strong communication skills from sales, structured execution from operations, and problem-solving discipline from engineering — a combination that makes my perspective valuable.
+    <!-- Tagline -->
+    <p class="text-sm md:text-base text-neutral
+              max-w-xl mx-auto mb-8 leading-relaxed">
+      Building reliable, scalable systems with cloud-first thinking and
+      a strong understanding of business and operations.
+    </p>
 
-        I’m continuously learning and actively exploring opportunities in cloud engineering, backend development, and infrastructure-focused teams.</p>
-      </div>
+    <!-- CTA -->
+    <button
+      class="bg-primary px-6 py-3 rounded-2xl
+             transition duration-150
+             hover:shadow-md hover:opacity-60"
+    >
+      Get in touch
+    </button>
+
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="bg-secondary py-20 px-4">
+  <div class="max-w-4xl mx-auto">
+
+    <!-- Heading -->
+    <h2 class="text-3xl font-cool text-center mb-12">
+      About Me
+    </h2>
+
+    <!-- Card -->
+    <div
+      class="border border-primary rounded-3xl
+             p-6 md:p-10 font-sans
+             text-sm md:text-base
+             leading-relaxed"
+    >
+      <p class="mb-6">
+        I’m a software engineer with experience spanning sales, operations,
+        and technology — giving me a holistic view of how systems, people,
+        and business goals connect.
+      </p>
+
+      <p class="mb-6">
+        I began my journey as a Systems Engineer at Infosys, where I developed
+        a strong interest in backend systems and infrastructure. Since then,
+        I’ve worked across industries and gained real-world insight into how
+        products and systems support business growth.
+      </p>
+
+      <p class="mb-8">
+        Today, I’m building deep expertise in AWS, serverless development,
+        and TypeScript while contributing to cloud-focused projects.
+        I bring strong communication skills, structured execution,
+        and engineering discipline to every team I work with.
+      </p>
 
       <div class="flex justify-end">
-        <button class="font-cool bg-primary p-2 rounded-2xl">Get in touch</button>
+        <button
+          class="font-cool bg-primary px-5 py-2 rounded-2xl
+                 transition duration-150 hover:shadow-md"
+        >
+          Get in touch
+        </button>
       </div>
-
     </div>
 
-    </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Skills Section-->  
   <section id="skills" class="bg-light min-h-dvh grid">
@@ -99,7 +167,7 @@
         <h3 class="text-xl"> Full stack technologies</h3>
       </div>
       <div class="flex self-end justify-center md:justify-end max-h-10">
-        <button class="bg-secondary max-w-sm p-2 rounded-2xl">Read my blog</button>
+        <button class="bg-secondary max-w-sm p-2 rounded-2xl transition duration-150 hover:opacity-60">Read my blog</button>
       </div>
       
     </div>
@@ -109,7 +177,7 @@
         <h3 class="text-xl"> Data Analytics technologies</h3>
       </div>
       <div class="flex self-end justify-center md:justify-end max-h-10">
-        <button class="bg-secondary p-2 rounded-2xl">Read my blog</button>
+        <button class="bg-secondary p-2 rounded-2xl transition duration-150 hover:opacity-60">Read my blog</button>
       </div>
     </div>
 
@@ -118,7 +186,7 @@
         <h3 class="text-xl"> AI technologies</h3>
       </div>
       <div class="flex self-end justify-center md:justify-end max-h-10">
-        <button class="bg-secondary p-2 rounded-2xl">Read my blog</button>
+        <button class="bg-secondary p-2 rounded-2xl transition duration-150 hover:opacity-60">Read my blog</button>
       </div>
       
     </div>
@@ -182,22 +250,22 @@
             lg:grid-cols-3
             justify-items-center">
 
-    <div id="feature-1" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3">
-      <img src="./src/images/project1.jpg" alt="project-1" id="project-1" class="w-full h-full object-cover rounded-3xl">
+    <div id="feature-1" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3 hover:border-neutral">
+      <img src="./src/images/project1.jpg" alt="project-1" id="project-1" class="w-full h-full object-cover rounded-3xl transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md">
     </div>
 
-    <div id="feature-2" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3">
-      <img src="./src/images/project2.png" alt="project-2" id="project-2" class="w-full h-full object-cover rounded-3xl">
+    <div id="feature-2" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3 hover:border-neutral">
+      <img src="./src/images/project2.png" alt="project-2" id="project-2" class="w-full h-full object-cover rounded-3xl transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md">
     </div>
 
-    <div id="feature-3" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3">
-      <img src="./src/images/project3.png" alt="project-3" id="project-3" class="w-full h-full object-cover rounded-3xl">
+    <div id="feature-3" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3 hover:border-neutral">
+      <img src="./src/images/project3.png" alt="project-3" id="project-3" class="w-full h-full object-cover rounded-3xl transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md">
     </div>
 
     </div>
     
     <div class="grid justify-center p-5 md:h-20">
-      <button class="font-cool bg-primary p-2 rounded-2xl">More on Github</button>
+      <button class="font-cool bg-primary p-2 rounded-2xl transition duration-150 hover:opacity-60">More on Github</button>
     </div>
 
   </section>
@@ -213,13 +281,13 @@
       <div class="grid justify-center gap-12 font-cool px-4
             grid-cols-1
             lg:grid-cols-3">
-    <div class="border border-neutral rounded-3xl gap-5 p-4">
+    <div class="border border-neutral rounded-3xl gap-5 p-4 hover:border-hover">
       <img src="./src/images/cert1.png" alt="certification-1" id="cert-1" class="h-36">
     </div>
-    <div class="border border-neutral rounded-3xl gap-5 p-4">
+    <div class="border border-neutral rounded-3xl gap-5 p-4 hover:border-hover">
       <img src="./src/images/cert2.jpeg" alt="certification-2" id="cert-2" class="h-36">
     </div>
-    <div class="border border-neutral rounded-3xl gap-5 p-4">
+    <div class="border border-neutral rounded-3xl gap-5 p-4 hover:border-hover">
       <img src="./src/images/cert3.png" alt="certification-3" id="cert-3" class="h-36">
     </div>
     </div>
