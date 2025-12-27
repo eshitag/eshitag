@@ -91,14 +91,12 @@
     </p>
 
     <!-- CTA -->
-    <button
+      <a href="#contact"><button
       class="bg-primary px-6 py-3 rounded-2xl
              transition duration-150
              hover:shadow-md hover:opacity-60"
-    >
-      Get in touch
-    </button>
-
+    >Get in touch</button></a>
+    
   </div>
 </section>
 
@@ -115,7 +113,7 @@
     <!-- Card -->
     <div
       class="border border-primary rounded-3xl
-             p-6 md:p-10 font-sans
+             p-6 md:p-10 font-sans text-neutral
              text-sm md:text-base
              leading-relaxed"
     >
@@ -138,15 +136,6 @@
         I bring strong communication skills, structured execution,
         and engineering discipline to every team I work with.
       </p>
-
-      <div class="flex justify-end">
-        <button
-          class="font-cool bg-primary px-5 py-2 rounded-2xl
-                 transition duration-150 hover:shadow-md"
-        >
-          Get in touch
-        </button>
-      </div>
     </div>
 
   </div>
@@ -162,9 +151,18 @@
 
     <div class="grid md:flex gap-2 justify-around font-cool">
 
-    <div id="full-stack" class="min-w-1/4 grid gap-5 p-2 border border-secondary rounded-3xl">
+    <div id="full-stack" class="min-w-1/4 grid gap-5 p-2 border border-secondary rounded-3xl hover:shadow-md">
       <div class="flex justify-center">
         <h3 class="text-xl"> Full stack technologies</h3>
+      </div>
+      <div class="text-neutral">
+        <p class="pl-4">HTML, CSS, JS/TS, ES6+</p>
+        <p class="pl-4">Node.js + Express.js</p>
+        <p class="pl-4">ReactJS, NextJS</p>
+        <p class="pl-4">API Management</p>
+        <p class="pl-4">Microservices</p>
+        <p class="pl-4">AWS EC2, S3, Lambda etc.</p>
+        <p class="pl-4">Tailwind, Bootstrap</p>
       </div>
       <div class="flex self-end justify-center md:justify-end max-h-10">
         <button class="bg-secondary max-w-sm p-2 rounded-2xl transition duration-150 hover:opacity-60">Read my blog</button>
@@ -172,18 +170,36 @@
       
     </div>
 
-    <div id="data-analytics" class="min-w-1/4 grid gap-5 p-2 border border-secondary rounded-3xl">
+    <div id="data-analytics" class="min-w-1/4 grid gap-5 p-2 border border-secondary rounded-3xl hover:shadow-md">
       <div class="flex justify-center">
         <h3 class="text-xl"> Data Analytics technologies</h3>
+      </div>
+      <div class="text-neutral">
+        <p class="pl-4">MySQl, PostgreSQL, MongoDB</p>
+        <p class="pl-4">Apache Spark</p>
+        <p class="pl-4">Hadoop, Hive, Kafka</p>
+        <p class="pl-4">Power BI, Tableau</p>
+        <p class="pl-4">Rapid Miner</p>
+        <p class="pl-4">Data manipulation</p>
+        <p class="pl-4">ETL</p>
       </div>
       <div class="flex self-end justify-center md:justify-end max-h-10">
         <button class="bg-secondary p-2 rounded-2xl transition duration-150 hover:opacity-60">Read my blog</button>
       </div>
     </div>
 
-    <div id="ai" class="min-w-1/4 grid gap-5 p-2 border border-secondary rounded-3xl">
+    <div id="ai" class="min-w-1/4 grid gap-5 p-2 border border-secondary rounded-3xl hover:shadow-md">
       <div class="flex justify-center">
         <h3 class="text-xl"> AI technologies</h3>
+      </div>
+      <div class="text-neutral">
+        <p class="pl-4">Prompt Engineering</p>
+        <p class="pl-4">Feature Engineering</p>
+        <p class="pl-4">Model Evaluation & optimization</p>
+        <p class="pl-4">Dialodflow ES</p>
+        <p class="pl-4">Supervised & unsupervised learning</p>
+        <p class="pl-4">Gen AI</p>
+        <p class="pl-4">ML techniques</p>
       </div>
       <div class="flex self-end justify-center md:justify-end max-h-10">
         <button class="bg-secondary p-2 rounded-2xl transition duration-150 hover:opacity-60">Read my blog</button>
@@ -262,16 +278,28 @@
       <img src="./src/images/project3.png" alt="project-3" id="project-3" class="w-full h-full object-cover rounded-3xl transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md">
     </div>
 
+    <div id="feature-4" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3 hover:border-neutral">
+      <img src="./src/images/project3.png" alt="project-4" id="project-4" class="w-full h-full object-cover rounded-3xl transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md">
+    </div>
+
+    <div id="feature-5" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3 hover:border-neutral">
+      <img src="./src/images/project3.png" alt="project-5" id="project-5" class="w-full h-full object-cover rounded-3xl transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md">
+    </div>
+
+    <div id="feature-6" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3 hover:border-neutral">
+      <img src="./src/images/project3.png" alt="project-6" id="project-6" class="w-full h-full object-cover rounded-3xl transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md">
+    </div>
+
     </div>
     
     <div class="grid justify-center p-5 md:h-20">
-      <button class="font-cool bg-primary p-2 rounded-2xl transition duration-150 hover:opacity-60">More on Github</button>
+      <a href="https://github.com/eshitag" id="github"><button class="font-cool bg-primary p-2 rounded-2xl transition duration-150 hover:opacity-60">More on Github</button></a>
     </div>
 
   </section>
 
   <!-- Certification Section-->  
-  <section id="certifications" class="bg-primary min-h-2/3 flex flex-col">
+  <section id="certifications" class="bg-light min-h-2/3 flex flex-col">
 
     <div class="flex justify-start font-cool p-5">
       <h2 class="text-3xl">Certifications</h2>
@@ -296,28 +324,26 @@
   </section>
 
   <!-- Upcoming Work Section-->  
-  <section id="upcoming" class="bg-light min-h-[40vh] flex flex-col md:flex-row items-center justify-center gap-6 px-6">
+  <section id="upcoming" class="bg-secondary min-h-[40vh] flex flex-col md:flex-row items-center justify-center gap-6 px-6">
 
       <div id="up-cert" class="p-6 border border-secondary rounded-3xl
            flex flex-col items-center gap-4
-           w-full max-w-sm">
+           w-full max-w-sm hover:shadow-md">
       <h3 class="text-xl font-cool text-center"> Upcoming Certifications </h3>
 
-      <div class="border border-neutral rounded-3xl
-             flex items-center justify-center
-             p-4">
+      <div class="border border-neutral rounded-3xl flex items-center justify-center p-4 hover:border-primary">
       <img src="./src/images/upcoming1.png" alt="certification-3" id="cert-3" class="h-24 object-contain">
       </div>
       </div>
 
       <div id="up-project" class="p-6 border border-secondary rounded-3xl
            flex flex-col items-center gap-4
-           w-full max-w-sm">
+           w-full max-w-sm hover:shadow-md">
       <h3 class="text-xl font-cool text-center"> Upcoming Project </h3>
 
       <div class="border border-neutral rounded-3xl
              flex items-center justify-center
-             p-4">
+             p-4  hover:border-primary">
       <img src="./src/images/upcoming2.jpg" alt="certification-3" id="cert-3" class="h-24 object-contain">
       </div>
       </div>
@@ -334,36 +360,36 @@
     <div class="w-full max-w-xl border border-primary rounded-3xl
              p-6 flex flex-col gap-6 font-cool">
 
-      <form class="flex flex-col gap-4">
+      <form action="https://formspree.io/f/xlgebzee" method="POST" class="flex flex-col gap-4">
         <div class="flex flex-col gap-1">
           <label for="name" class="mb-1 text-sm">Name </label> 
-            <input id="name" type="text"
+            <input id="name" name="name" type="text"
             class="border border-neutral rounded-xl p-3
                    bg-transparent focus:outline-none
                    focus:border-primary"
             placeholder="Your name"
-          /></label> </div>
+          required/></label> </div>
 
         <div class="flex flex-col gap-1">
           <label for="email" class="mb-1 text-sm">Email </label>
-            <input id="email" type="email"
+            <input id="email" name="email" type="email"
             class="border border-neutral rounded-xl p-3
                    bg-transparent focus:outline-none
                    focus:border-primary"
             placeholder="You@email.com"
-          /></label>
+          required/></label>
         </div>
 
         <div class="flex flex-col gap-1">
           <label for="message">Message </label> 
             <textarea
-            id="message"
+            id="message" name="message"
             rows="4"
             class="border border-neutral rounded-xl p-3
                    bg-transparent focus:outline-none
                    focus:border-primary resize-none"
             placeholder="Your message..."
-          ></textarea></label>
+          required></textarea></label>
         </div>
 
         <button
@@ -374,6 +400,8 @@
           Send Message
         </button>
       </form>
+      <p class="text-sm text-neutral">
+        I’ll usually respond within 24–48 hours </p>
     </div>
     </div>
 
@@ -398,6 +426,6 @@
   </footer>
 
   <!--Future ideas
-  hover:shadow + a little transform animation on cards to show them pop up, add details in skills cards, Add my avatar maybe on top in a circle with border, inline validation messages for form, sucess/error UI states, dark mode maybe   -->
+  add details in skills cards,add desc for projects, certs etc., inline validation messages for form, submittion of messages to email address, success/error UI states, accessibilit and keyboard navigation -->
 </body>
 </html>

@@ -16,7 +16,9 @@
 
   --font-cool: "Zalando Sans Expanded", sans-serif;
 }
-
+/* --------------------------
+   Base animation & utilities
+--------------------------- */
 @keyframes marquee {
   from {
     transform: translateX(0);
@@ -42,4 +44,62 @@
   }
 }
 
+/* ==========================
+   Component abstractions
+========================== */
 
+@layer components {
+
+  /* ---------- Layout ---------- */
+  .section {
+    @apply px-4 py-20;
+  }
+
+  .container {
+    @apply max-w-4xl mx-auto;
+  }
+
+  .section-title {
+    @apply text-3xl font-cool text-center mb-12;
+  }
+
+  /* ---------- Cards ---------- */
+  .card {
+    @apply border rounded-3xl p-6 md:p-10;
+  }
+
+  .card-primary {
+    @apply border-primary bg-secondary;
+  }
+
+  .card-secondary {
+    @apply border-secondary bg-light;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    @apply px-6 py-3 rounded-2xl font-cool
+           transition duration-150;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:opacity-80 hover:shadow-md;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary border border-primary hover:opacity-80;
+  }
+
+  /* ---------- Navigation ---------- */
+  .nav-link {
+    @apply transition-colors duration-200 hover:text-black;
+  }
+
+  /* ---------- Forms ---------- */
+  .input {
+    @apply border border-neutral rounded-xl p-3
+           bg-transparent focus:outline-none
+           focus:border-primary;
+  }
+
+}
