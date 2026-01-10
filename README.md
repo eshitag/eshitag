@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 -->
 
 
-💻 Software Engineer | 🌐 Full Stack Developer | ☁️ Cloud Enthusiast | 🤖 AI & Analytics Explorer
+💻 Software Engineer | 🌐 Full Stack Developer | ☁️ Cloud Practitioner | 🤖 AI & Analytics Explorer
 <p align="left"> <img src="https://img.shields.io/badge/Full%20Stack%20Developer-orange?style=for-the-badge" /> <img src="https://img.shields.io/badge/Cloud%20Practitioner-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/Data%20Engineering-yellow?style=for-the-badge" /> <img src="https://img.shields.io/badge/Data%20Analytics-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/AI%20ML-purple?style=for-the-badge" /> </p>
 <!--
 <p align="left"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=eshitag&theme=default" height="150" /> <img src="https://github-readme-stats.vercel.app/api?username=eshitag&show_icons=true&theme=default" height="150" /> </p>
