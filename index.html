@@ -80,7 +80,7 @@
 
     <!-- Role -->
     <span class="text-neutral text-lg md:text-xl mb-4">
-      Software Developer | Cloud Engineer
+      Software Developer | Cloud Data Engineer
     </span>
 
     <!-- Tagline -->
@@ -150,12 +150,11 @@
       <div class="text-neutral">
         <p class="pl-4">Java, Springboot, Hibernate</p>
         <p class="pl-4">HTML, CSS, JS/TS, ES6+</p>
+        <p class="pl-4">Tailwind, Bootstrap</p>
         <p class="pl-4">Node.js + Express.js</p>
         <p class="pl-4">ReactJS, NextJS, Redux</p>
-        <p class="pl-4">API and State Management</p>
-        <p class="pl-4">Microservices</p>
-        <p class="pl-4">AWS EC2, S3, Lambda, DynamoDB</p>
-        <p class="pl-4">Tailwind, Bootstrap</p>
+        <p class="pl-4">RESTful API</p>
+        <p class="pl-4">Python</p>
       </div>
       <div class="flex self-end justify-center md:justify-end max-h-10">
         <!--Hidden CTA Button - update later-->
@@ -166,14 +165,14 @@
 
     <div id="data-analytics" class="min-w-1/4 grid gap-5 p-2 border border-secondary rounded-3xl hover:shadow-md">
       <div class="flex justify-center">
-        <h3 class="text-xl"> Data Engineering</h3>
+        <h3 class="text-xl">Data Engineering</h3>
       </div>
       <div class="text-neutral">
-        <p class="pl-4">PostgreSQL</p>
-        <p class="pl-4">Python</p>
-        <p class="pl-4">Power BI, Tableau</p>
-        <p class="pl-4">Data Processing</p>
-        <p class="pl-4">Data Lakes, Data Warehousing</p>
+        <p class="pl-4">T-SQL</p>
+        <p class="pl-4">ETL/ELT</p>
+        <p class="pl-4">Data Warehousing</p>
+        <p class="pl-4">Data Processing, Data Cleaning</p>
+        <p class="pl-4">Tableau/ Power BI Reporting</p>
       </div>
       <div class="flex self-end justify-center md:justify-end max-h-10">
         <!--Hidden CTA Button - update later-->
@@ -183,14 +182,16 @@
 
     <div id="ai" class="min-w-1/4 grid gap-5 p-2 border border-secondary rounded-3xl hover:shadow-md">
       <div class="flex justify-center">
-        <h3 class="text-xl"> AI/ML Implementation</h3>
+        <h3 class="text-xl">Cloud and AI</h3>
       </div>
       <div class="text-neutral">
-        <p class="pl-4">NLP using RapidMiner</p>
+        <p class="pl-4">Amazon Web Services</p>
+        <p class="pl-4">LLM Integration</p>
+        <p class="pl-4">Gen AI Integration</p>
         <p class="pl-4">NumPy, Pandas, Scikit-Learn</p>
         <p class="pl-4">TensorFlow, Matplotlib</p>
         <p class="pl-4">Classification/Regression</p>
-        <p class="pl-4">Exploratory Data analysis</p>
+        <p class="pl-4">Exploratory Data analysis using ML</p>
       </div>
       <div class="flex self-end justify-center md:justify-end max-h-10">
         <!--Hidden CTA Button - update later-->
@@ -258,28 +259,70 @@
             lg:grid-cols-3
             justify-items-center">
 
-    <div id="feature-1" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3 hover:border-neutral">
-      <a href="https://github.com/eshitag/CloudTech/blob/main/myfirstapp_AWS.pdf"><img src="./src/images/project-1.png" alt="project-1" id="project-1" class="w-full h-full object-cover rounded-3xl transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md"></a>
+    <div id="feature-1" class="border border-primary rounded-3xl p-4 w-full max-w-[340px] grid gap-3 hover:border-neutral">
+      <a href="https://github.com/eshitag/CloudTech/blob/main/myfirstapp_AWS.pdf" class="block overflow-hidden rounded-2xl aspect-4/3">
+        <img src="./src/images/project-1.png" alt="project-1" id="project-1" class="w-full h-full object-cover transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md">
+      </a>
+      <div class="grid gap-2">
+        <h3 class="text-lg">CloudTech AWS App</h3>
+        <p class="text-sm text-neutral">Serverless AWS demo app with architecture and deployment notes.</p>
+        <a href="https://github.com/eshitag/CloudTech/blob/main/myfirstapp_AWS.pdf" class="text-sm text-primary underline-offset-4 hover:underline">View project</a>
+      </div>
     </div>
 
-    <div id="feature-2" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3 hover:border-neutral">
-      <a href="https://github.com/eshitag/Fraud-Detector"><img src="./src/images/project-2.png" alt="project-2" id="project-2" class="w-full h-full object-cover rounded-3xl transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md"></a>
+    <div id="feature-2" class="border border-primary rounded-3xl p-4 w-full max-w-[340px] grid gap-3 hover:border-neutral">
+      <a href="https://github.com/eshitag/Fraud-Detector" class="block overflow-hidden rounded-2xl aspect-4/3">
+        <img src="./src/images/project-2.png" alt="project-2" id="project-2" class="w-full h-full object-cover transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md">
+      </a>
+      <div class="grid gap-2">
+        <h3 class="text-lg">Fraud Detector</h3>
+        <p class="text-sm text-neutral">Rules based classifier for transaction fraud detection and persistent storage.</p>
+        <a href="https://github.com/eshitag/Fraud-Detector" class="text-sm text-primary underline-offset-4 hover:underline">View project</a>
+      </div>
     </div>
 
-    <div id="feature-3" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3 hover:border-neutral">
-      <a href="https://github.com/eshitag/Carbon-Emission-Prediction-Model"><img src="./src/images/project-3.png" alt="project-3" id="project-3" class="w-full h-full object-cover rounded-3xl transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md"></a>
+    <div id="feature-3" class="border border-primary rounded-3xl p-4 w-full max-w-[340px] grid gap-3 hover:border-neutral">
+      <a href="https://github.com/eshitag/Carbon-Emission-Prediction-Model" class="block overflow-hidden rounded-2xl aspect-4/3">
+        <img src="./src/images/project-3.png" alt="project-3" id="project-3" class="w-full h-full object-cover transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md">
+      </a>
+      <div class="grid gap-2">
+        <h3 class="text-lg">Carbon Emission Predictor</h3>
+        <p class="text-sm text-neutral">Regression model to forecast emissions from industrial data.</p>
+        <a href="https://github.com/eshitag/Carbon-Emission-Prediction-Model" class="text-sm text-primary underline-offset-4 hover:underline">View project</a>
+      </div>
     </div>
 
-    <div id="feature-4" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3 hover:border-neutral">
-      <a href="https://dev-connector-chi-bice.vercel.app/"><img src="./src/images/project-4.png" alt="project-4" id="project-4" class="w-full h-full object-cover rounded-3xl transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md"></a>
+    <div id="feature-4" class="border border-primary rounded-3xl p-4 w-full max-w-[340px] grid gap-3 hover:border-neutral">
+      <a href="https://dev-connector-chi-bice.vercel.app/" class="block overflow-hidden rounded-2xl aspect-4/3">
+        <img src="./src/images/project-4.png" alt="project-4" id="project-4" class="w-full h-full object-cover transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md">
+      </a>
+      <div class="grid gap-2">
+        <h3 class="text-lg">Dev Connector</h3>
+        <p class="text-sm text-neutral">Full-stack developer network with profiles and posts.</p>
+        <a href="https://dev-connector-chi-bice.vercel.app/" class="text-sm text-primary underline-offset-4 hover:underline">View project</a>
+      </div>
     </div>
 
-    <div id="feature-5" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3 hover:border-neutral">
-      <a href="https://northerndentalgoosebay.ca/"><img src="./src/images/project-5.png" alt="project-5" id="project-5" class="w-full h-full object-cover rounded-3xl transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md"></a>
+    <div id="feature-5" class="border border-primary rounded-3xl p-4 w-full max-w-[340px] grid gap-3 hover:border-neutral">
+      <a href="https://northerndentalgoosebay.ca/" class="block overflow-hidden rounded-2xl aspect-4/3">
+        <img src="./src/images/project-5.png" alt="project-5" id="project-5" class="w-full h-full object-cover transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md">
+      </a>
+      <div class="grid gap-2">
+        <h3 class="text-lg">Northern Dental Website</h3>
+        <p class="text-sm text-neutral">Responsive marketing site for a dental clinic.</p>
+        <a href="https://northerndentalgoosebay.ca/" class="text-sm text-primary underline-offset-4 hover:underline">View project</a>
+      </div>
     </div>
 
-    <div id="feature-6" class="border border-primary rounded-3xl p-4 overflow-hidden w-full max-w-[340px] aspect-4/3 hover:border-neutral">
-      <a href="https://github.com/eshitag/Java_QuizApp"><img src="./src/images/project-6.png" alt="project-6" id="project-6" class="w-full h-full object-cover rounded-3xl transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md"></a>
+    <div id="feature-6" class="border border-primary rounded-3xl p-4 w-full max-w-[340px] grid gap-3 hover:border-neutral">
+      <a href="https://github.com/eshitag/Java_QuizApp" class="block overflow-hidden rounded-2xl aspect-4/3">
+        <img src="./src/images/project-6.png" alt="project-6" id="project-6" class="w-full h-full object-cover transition duration-350 ease-out hover:-translate-y-1 hover:shadow-md">
+      </a>
+      <div class="grid gap-2">
+        <h3 class="text-lg">Java Quiz App</h3>
+        <p class="text-sm text-neutral">Java quiz app with question bank and scoring.</p>
+        <a href="https://github.com/eshitag/Java_QuizApp" class="text-sm text-primary underline-offset-4 hover:underline">View project</a>
+      </div>
     </div>
 
     </div>
@@ -302,20 +345,25 @@
       <h2 class="text-3xl">Certifications</h2>
     </div>
 
-    <div class="flex-1 flex items-center justify-around m-5">
-      <div class="grid justify-center gap-12 font-cool px-4
+    <div class="flex-1 flex items-center justify-center px-4 pb-10">
+      <div class="grid w-full max-w-5xl gap-4 font-cool
             grid-cols-1
-            lg:grid-cols-3">
-    <div class="border border-neutral rounded-3xl gap-5 p-4 hover:border-hover">
-      <img src="./src/images/cert1.png" alt="certification-1" id="cert-1" class="h-36">
-    </div>
-    <div class="border border-neutral rounded-3xl gap-5 p-4 hover:border-hover">
-      <img src="./src/images/cert2.jpeg" alt="certification-2" id="cert-2" class="h-36">
-    </div>
-    <div class="border border-neutral rounded-3xl gap-5 p-4 hover:border-hover">
-      <img src="./src/images/cert3.png" alt="certification-3" id="cert-3" class="h-36">
-    </div>
-    </div>
+            sm:grid-cols-2
+            lg:grid-cols-4
+            justify-items-between">
+        <div class="border border-neutral rounded-3xl p-4 m-2 hover:border-hover flex items-center justify-center max-w-[90px]">
+          <img src="./src/images/cert1.png" alt="certification-1" id="cert-1" class="h-36 object-contain">
+        </div>
+        <div class="border border-neutral rounded-3xl p-4 hover:border-hover flex items-center justify-center max-w-[220px]">
+          <img src="./src/images/cert4.png" alt="certification-3" id="cert-3" class="h-36 object-contain">
+        </div>
+        <div class="border border-neutral rounded-3xl p-4 hover:border-hover flex items-center justify-center max-w-[220px]">
+          <img src="./src/images/cert2.jpeg" alt="certification-2" id="cert-2" class="h-36 object-contain">
+        </div>
+        <div class="border border-neutral rounded-3xl p-4 hover:border-hover flex items-center justify-center max-w-[220px]">
+          <img src="./src/images/cert3.png" alt="certification-3" id="cert-3" class="h-36 object-contain">
+        </div>
+      </div>
     </div>
 
   </section>
@@ -412,7 +460,7 @@
       <a href="https://www.linkedin.com/in/eshitaxgupta/" class="hover:scale-110 transition">
           <img src="./src/images/linkedin.png" alt="LinkedIn" class="h-12" />
       </a>
-      <a href="#" class="hover:scale-110 transition">
+      <a href="https://medium.com/@geshita03/how-i-cleared-aws-cloud-practitioner-by-thinking-in-systems-e92277c377bc" class="hover:scale-110 transition">
           <img src="./src/images/medium.png" alt="Medium" class="h-12" />
       </a>
     </div>
@@ -424,7 +472,4 @@
   <span>© 2025 Eshita Gupta. All rights reserved.</span>
   </footer>
 
-  <!--Future ideas
-  add details in skills cards,add desc for projects, certs etc., inline validation messages for form, submittion of messages to email address, success/error UI states, accessibilit and keyboard navigation -->
-</body>
 </html>
